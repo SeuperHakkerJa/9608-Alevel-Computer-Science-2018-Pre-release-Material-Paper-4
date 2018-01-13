@@ -1,0 +1,70 @@
+class Toy:
+  
+  def __init__(self,n):
+    self.__ToyName = n 
+    self.__ToyID = ""
+    self.__Price = 0.00
+    self.__MinimumAge = 4
+  
+  def SetToyName(self,p):
+    self.__ToyName = p
+  def SetToyID(self,d):
+    self.__ToyID = d 
+  def SetPrice(self,i):
+    self.__Price = i
+  def SetMinimumAge(self,i):
+    self.__MinimumAge = int(i) 
+  def GetToyName(self):
+    return (self.__ToyName)
+  def GetToyID(self):
+    return (self.__ToyID)
+  def GetPrice(self):
+    return (self.__Price)
+  def GetMinimumAge(self):
+    return (self.__MinimumAge)
+  
+    
+class ComputerGame(Toy):
+  def __init__(self,n):
+    Toy.__init__(self,n)
+    self.__Catogory = ""
+    self.__Console = ""
+  
+  def SetCatogory(self,c):
+    self.__Catogory = c
+  def SetConsole(self,c):
+    self.__Console = c
+  def GetCatogory(self):
+    return (self.__Catogory)
+  def GetConsole(self):
+    return (self.__Console)
+
+
+
+class Vehicle(Toy):
+  def __init__(self,n):
+    Toy.__init__(self,n)
+    self.__Type = ""
+    self.__Height = 0
+    self.__Length = 0 
+    self.__Weight = 0 
+    
+  def SetType(self,p):
+    self.__Type = p
+  def SetHeight(self,d):
+    self.__Height = d 
+  def SetLength(self,i):
+    self.__Length = i
+  def SetWeight(self,i):
+    self.__Weight = i 
+  def GetType(self):
+    return (self.__Type)
+  def GetHeight(self):
+    return (self.__Height)
+  def GetLength(self):
+    return (self.__Length)
+  def GetWeight(self):
+    return (self.__Weight)
+  
+
+    
