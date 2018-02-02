@@ -1,4 +1,4 @@
-```python
+
         class Toy:
 
           def __init__(self,name,ID,price,age):
@@ -152,7 +152,7 @@
           print(AllGame)
 
         main()
-```
+
 
 
 
